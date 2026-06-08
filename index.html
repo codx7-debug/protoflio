@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saleh Faisal Ahmed Al-Shami - SOC Analyst L1 & Security Engineering Graduate Portfolio">
+    <title>Saleh Al-Shami | SOC Analyst</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">&gt;_ SA<span class="blink">_</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="particles" id="particles-js"></div>
+        <div class="hero-content">
+            <p class="greeting" data-aos="fade-down" data-aos-delay="100">Initializing target... Welcome to the portfolio of</p>
+            <h1 class="name" data-aos="fade-up" data-aos-delay="200">Saleh Faisal Ahmed Al-Shami</h1>
+            <h2 class="title" data-aos="fade-up" data-aos-delay="300">
+                <span id="typed-text"></span>
+            </h2>
+            <p class="pitch" data-aos="fade-up" data-aos-delay="400">
+                Software Engineering student specializing in cybersecurity and full-stack development. 
+                Bridging the gap between building robust applications and securing them. Top 5% on TryHackMe, Ranked 32nd in Turkey.
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/codx7-debug" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">01. <span class="highlight">whoami</span></h2>
+            <div class="about-content" data-aos="fade-up">
+                <div class="about-text">
+                    <p>Hello! I'm Saleh, a passionate <strong>Software Engineering Student</strong> based in Ajman, UAE, graduating in May 2026. My interest in cybersecurity started when I realized that building software wasn't enough; defending it is where the real challenge lies.</p>
+                    <p>I specialize in network security, SIEM monitoring, Active Directory, and building secure full-stack applications. As a <strong>Cisco Certified Ethical Hacker</strong> and holding the <strong>ISC2 Certified in Cybersecurity (CC)</strong>, I am actively building my arsenal of defensive and offensive skills.</p>
+                    <p>My unique background in software engineering allows me to automate triage workflows, write custom log parsing scripts, and integrate APIs directly into security operations—skills that fast-track threat remediation and security tooling.</p>
+                    <div class="about-contact">
+                        <span><i class="fas fa-envelope"></i> wvkl0243@gmail.com</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Ajman, UAE</span>
+                        <span><i class="fas fa-graduation-cap"></i> Ostim Teknik University (GPA 3.30 | Honor Degree)</span>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="image-overlay"></div>
+                        <!-- Placeholder for a real photo, using a cool terminal graphic for now -->
+                        <div class="terminal-card">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <p><span class="prompt">codx7@system:~$</span> cat stats.txt</p>
+                                <p>OS: Kali Linux / Windows</p>
+                                <p>Role: SOC Analyst / Full-Stack</p>
+                                <p>THM Rank: Top 5% Global (#32 in Turkey)</p>
+                                <p>Rooms Completed: 101</p>
+                                <p><span class="prompt">codx7@system:~$</span> <span class="cursor blink"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">02. <span class="highlight">Toolkit & Arsenal</span></h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security & SOC</h3>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Penetration Testing</span>
+                        <span class="tag">Network Security</span>
+                        <span class="tag">OWASP Top 10</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">SIEM (Security Onion/Splunk)</span>
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">Burp Suite</span>
+                        <span class="tag">Wireshark</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Development & API</h3>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript (React/Node)</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Bash Scripting</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Cloud</h3>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">Packet Tracer</span>
+                        <span class="tag">Claude AI / ChatGPT</span>
+                        <span class="tag">GitHub Copilot</span>
+                        <span class="tag">Google Maps API</span>
+                        <span class="tag">VirtualBox/VMware</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">03. <span class="highlight">Operations & Projects</span></h2>
+            
+            <div class="project-cards">
+                
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <span class="badge siem">SIEM / Detection</span>
+                    </div>
+                    <h3 class="project-title">Home SOC Lab — Security Onion</h3>
+                    <p class="project-desc">
+                        Deployed a personal detection lab utilizing Security Onion. Ingested Windows event logs, wrote detection rules for common MITRE ATT&CK techniques, correlated alerts, and produced detailed incident reports.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Deploy → Ingest Logs → Write Rules → Correlate → Report</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Security Onion</li>
+                        <li>Sysmon</li>
+                        <li>Windows Server</li>
+                        <li>Zeek</li>
+                    </ul>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="badge threat">Threat Intel / Triage</span>
+                    </div>
+                    <h3 class="project-title">Phishing Email Analysis Engine</h3>
+                    <p class="project-desc">
+                        Parsed raw email headers, extracted IOCs, and automated queries to VirusTotal + AbuseIPDB APIs. Documented a full triage workflow in Markdown published to GitHub, demonstrating real analyst thinking.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Extraction → Enrichment → Analysis → Triage</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>REST APIs</li>
+                        <li>Email Forensics</li>
+                    </ul>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="badge crypto">Crypto / Tooling</span>
+                    </div>
+                    <h3 class="project-title">Secure File Signature CLI</h3>
+                    <p class="project-desc">
+                        Developed a Python CLI tool to verify file integrity using SHA-256 hashing and RSA digital signatures. Includes tamper detection via JSON manifests, bridging software engineering with core security concepts.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Hash → Sign (RSA) → Store Manifest → Verify Integrity</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>Cryptography</li>
+                        <li>CLI</li>
+                    </ul>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="https://tryhackme.com/p/codx7" target="_blank"><i class="fas fa-flag"></i></a>
+                        </div>
+                        <span class="badge ctf">CTF Writeups</span>
+                    </div>
+                    <h3 class="project-title">TryHackMe CTF Writeups</h3>
+                    <p class="project-desc">
+                        Completed 101 rooms ranking in the top 5% globally and #32 in Turkey. Published step-by-step writeups demonstrating enumeration, privilege escalation, web exploitation, and post-exploitation analysis. Finished "Cyber Security 101" and "Pre Security" paths.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Recon → Enum → Exploitation → PrivEsc → Documentation</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Kali Linux</li>
+                        <li>Nmap</li>
+                        <li>Burp Suite</li>
+                        <li>Metasploit</li>
+                    </ul>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="badge appsec">AppSec</span>
+                    </div>
+                    <h3 class="project-title">Secure Web Application (Graduation)</h3>
+                    <p class="project-desc">
+                        Led the cybersecurity workstream for a graduation project web app. Identified and remediated SQL injection and XSS vulnerabilities using OWASP Top 10 guidelines and coordinated security reviews.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Threat Modeling → SAST/DAST → Remediation → Review</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>OWASP</li>
+                        <li>Code Review</li>
+                        <li>Web Security</li>
+                    </ul>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <span class="badge fullstack">Full-Stack</span>
+                    </div>
+                    <h3 class="project-title">PetRescue Mobile App</h3>
+                    <p class="project-desc">
+                        Building a cross-platform mobile app using React Native and Node.js. Integrated Google Maps API for real-time geolocation of verified clinics and shelters, implementing strict platform integrity checks.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Design → API Integration → Frontend → Security Testing</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>React Native</li>
+                        <li>Node.js</li>
+                        <li>Google Maps API</li>
+                    </ul>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="project-links">
+                            <a href="https://tryhackme.com/soc-sim/public-summary/1f84d701f35a29e94b336c1ec995d4f01cd82f8e7ae0129d7e432c466d382df587f372fac15c66ea7ec6202bb4347c67" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <span class="badge siem">SOC Analyst</span>
+                    </div>
+                    <h3 class="project-title">TryHackMe SOC Level 1 Simulation</h3>
+                    <p class="project-desc">
+                        Successfully completed a rigorous SOC simulation on TryHackMe, handling real-world alerts, analyzing packet captures, parsing logs, and formulating incident response reports.
+                    </p>
+                    <div class="methodology">
+                        <h4>Methodology:</h4>
+                        <p>Triage → Investigation → Remediation → Reporting</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Splunk</li>
+                        <li>Wireshark</li>
+                        <li>Phishing Analysis</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">04. <span class="highlight">Experience Timeline</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity Intern</h3>
+                        <h4>University Cybersecurity Group · Ostim Teknik University</h4>
+                        <p>Designed and simulated enterprise network topologies using Cisco Packet Tracer, including VLAN segmentation and subnetting across multi-department environments. Implemented robust network segmentation to reduce attack surface.</p>
+                        <p>Deployed and configured Security Onion as a SIEM platform to monitor network traffic, detect anomalies, and trigger security events in a controlled lab environment.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Oct 2022 - May 2026</div>
+                    <div class="timeline-content">
+                        <h3>B.S. Software Engineering</h3>
+                        <h4>Ostim Teknik University · Ankara, Turkey</h4>
+                        <p>GPA: 3.30 / 4.00 (Honor Degree)</p>
+                        <p>Relevant coursework: Computer Networks, Operating Systems, Cybersecurity, Information Security. Focus on bridging the gap between secure coding practices and effective network defense.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity CTF Competitor</h3>
+                        <h4>TryHackMe</h4>
+                        <p>Consistently practicing offensive and defensive skills. Achieved Top 5% Global ranking and 32nd in Turkey. Completed 101 hands-on rooms and finished "Cyber Security 101" and "Pre Security" paths covering penetration testing, web exploitation, forensics, and cryptography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">05. <span class="highlight">Certifications</span></h2>
+            
+            <div class="cert-grid">
+                <div class="cert-card" data-aos="flip-up">
+                    <div class="cert-icon"><i class="fas fa-shield-check"></i></div>
+                    <h3>ISC2 CC</h3>
+                    <p>Certified in Cybersecurity</p>
+                    <span class="cert-date">2024</span>
+                </div>
+                
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Cisco Ethical Hacker</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="cert-date">Jun 2025</span>
+                </div>
+                
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="cert-icon"><i class="fab fa-python"></i></div>
+                    <h3>Cisco Python Essentials 1</h3>
+                    <p>Python Institute</p>
+                    <span class="cert-date">Jan 2026</span>
+                </div>
+                
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Intro to Cybersecurity</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="cert-date">Sep 2023</span>
+                </div>
+
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Scientist in Python</h3>
+                    <p>DataCamp · 26 hours</p>
+                    <span class="cert-date">Jul 2024</span>
+                </div>
+
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Analyst in SQL</h3>
+                    <p>DataCamp · 39 hours</p>
+                    <span class="cert-date">Jan 2024</span>
+                </div>
+
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="600">
+                    <div class="cert-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Cyber Security 101</h3>
+                    <p>TryHackMe Learning Path</p>
+                    <span class="cert-date">Jun 2026</span>
+                </div>
+
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="700">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Pre Security</h3>
+                    <p>TryHackMe Learning Path</p>
+                    <span class="cert-date">Jun 2026</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title center" data-aos="fade-up">06. <span class="highlight">Initiate Connection</span></h2>
+            <p class="contact-desc" data-aos="fade-up" data-aos-delay="100">
+                Whether you're looking for an eager SOC Analyst L1, need help with a security project, or just want to talk about the latest APT threats, my inbox is open.
+            </p>
+            
+            <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:wvkl0243@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> wvkl0243@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/saleh-faisal-ahmed-alshami" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/codx7-debug" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="tel:+971566966092" title="Phone"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Saleh Faisal Ahmed Al-Shami. Designed with pure HTML/CSS/JS.</p>
+            <p class="footer-terminal">status: 200 OK | connection: secure</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
