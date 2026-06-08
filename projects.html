@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Saleh Al-Shami</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .project-detail-section {
+            background: var(--bg-card);
+            border: var(--glass-border);
+            border-radius: 12px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-detail-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+        }
+        .project-detail-title {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .project-detail-title i {
+            color: var(--primary);
+        }
+        .placeholder-text {
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            padding: 1.5rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            border: 1px dashed rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">&gt;_ SA<span class="blink">_</span></a>
+            </div>
+            <ul class="nav-links" style="justify-content: flex-end;">
+                <li><a href="index.html" class="btn btn-outline" style="padding: 0.5rem 1rem;"><i class="fas fa-arrow-left"></i> Back to Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Background Particles -->
+    <div class="particles" id="particles-js" style="position: fixed; z-index: -1;"></div>
+
+    <!-- Details Section -->
+    <section class="section" style="padding-top: 10rem; min-height: 100vh;">
+        <div class="container">
+            <div style="margin-bottom: 4rem;">
+                <h2 class="section-title" data-aos="fade-right">Project <span class="highlight">Deep Dives</span></h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px;" data-aos="fade-up">
+                    Detailed write-ups, architecture diagrams, and full methodologies for my security operations and engineering projects.
+                </p>
+            </div>
+
+            <!-- Project 1 Placeholder -->
+            <div class="project-detail-section" data-aos="fade-up">
+                <h3 class="project-detail-title"><i class="fas fa-shield-alt"></i> Home SOC Lab — Security Onion</h3>
+                <div class="placeholder-text">
+                    <p>// TODO: Insert your detailed write-up here.</p>
+                    <br>
+                    <p>&gt; Suggested sections:</p>
+                    <p>- Objective & Topology</p>
+                    <p>- Sysmon / Zeek Configuration</p>
+                    <p>- Screenshots of Kibana/Splunk Dashboards</p>
+                    <p>- Simulated Attacks & Incident Response Procedures</p>
+                </div>
+            </div>
+
+            <!-- Project 2 Placeholder -->
+            <div class="project-detail-section" data-aos="fade-up">
+                <h3 class="project-detail-title"><i class="fas fa-envelope-open-text"></i> Phishing Email Analysis Engine</h3>
+                <div class="placeholder-text">
+                    <p>// TODO: Insert your detailed write-up here.</p>
+                    <br>
+                    <p>&gt; Suggested sections:</p>
+                    <p>- Python code snippets for email parsing</p>
+                    <p>- API integration (VirusTotal / AbuseIPDB)</p>
+                    <p>- Email headers analyzed (SPF, DKIM, DMARC)</p>
+                    <p>- Final Markdown Triage Report output example</p>
+                </div>
+            </div>
+
+            <!-- Project 3 Placeholder -->
+            <div class="project-detail-section" data-aos="fade-up">
+                <h3 class="project-detail-title"><i class="fas fa-lock"></i> Web App Penetration & Hardening</h3>
+                <div class="placeholder-text">
+                    <p>// TODO: Insert your detailed write-up here.</p>
+                    <br>
+                    <p>&gt; Suggested sections:</p>
+                    <p>- Vulnerability Discovery (XSS, SQLi, BAC)</p>
+                    <p>- Exploitation steps (Payloads used)</p>
+                    <p>- Remediation code (How you patched it in Flask/Python)</p>
+                    <p>- Before/After security verification</p>
+                </div>
+            </div>
+            
+            <!-- Project 4 Placeholder -->
+            <div class="project-detail-section" data-aos="fade-up">
+                <h3 class="project-detail-title"><i class="fas fa-key"></i> Role-Based Access Control API</h3>
+                <div class="placeholder-text">
+                    <p>// TODO: Insert your detailed write-up here.</p>
+                    <br>
+                    <p>&gt; Suggested sections:</p>
+                    <p>- JWT Auth Flow architecture</p>
+                    <p>- Middleware logic for Admin vs User</p>
+                    <p>- Token Revocation / Blacklisting mechanism</p>
+                    <p>- security.log output examples for 403 attempts</p>
+                </div>
+            </div>
+
+            <!-- Add more project placeholders block -->
+            <div class="project-detail-section" data-aos="fade-up" style="text-align: center; border: 2px dashed var(--text-muted); background: transparent; padding: 2rem;">
+                <h3 style="color: var(--text-muted); font-family: var(--font-mono); margin: 0; font-size: 1.2rem;">+ Copy a block above to add more projects</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Saleh Faisal Ahmed Al-Shami. Designed with pure HTML/CSS/JS.</p>
+            <p class="footer-terminal">status: 200 OK | connection: secure</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+        
+        // Initialize Particles
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                "particles": {"number": {"value": 40},"color": {"value": "#00f0ff"},"shape": {"type": "circle"},"opacity": {"value": 0.3},"size": {"value": 3},"line_linked": {"enable": true,"color": "#00f0ff","opacity": 0.2},"move": {"enable": true,"speed": 1}},
+                "interactivity": {"events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"}}},
+                "retina_detect": true
+            });
+        }
+    </script>
+</body>
+</html>
