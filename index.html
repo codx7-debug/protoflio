@@ -20,7 +20,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="no-scroll">
+    <!-- Splash Screen (Boot Sequence) -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="terminal-card splash-terminal">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <div class="terminal-body" id="boot-sequence">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -29,9 +43,9 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio-database" data-tab-link="skills-tab">Skills</a></li>
+                <li><a href="#portfolio-database" data-tab-link="projects-tab">Projects</a></li>
+                <li><a href="#portfolio-database" data-tab-link="experience-tab">Experience</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -104,10 +118,21 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <!-- Portfolio Database Section (Tabs) -->
+    <section id="portfolio-database" class="section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-right">02. <span class="highlight">Toolkit & Arsenal</span></h2>
+            <h2 class="section-title center" data-aos="fade-up">02. <span class="highlight">Portfolio Database</span></h2>
+            
+            <div class="tabs-header" data-aos="fade-up">
+                <button class="tab-btn active" data-target="skills-tab">Toolkit & Arsenal</button>
+                <button class="tab-btn" data-target="projects-tab">Operations & Projects</button>
+                <button class="tab-btn" data-target="experience-tab">Experience Timeline</button>
+            </div>
+            
+            <div class="tab-content-container">
+
+                <!-- Skills Tab -->
+                <div id="skills-tab" class="tab-pane active">
             <div class="skills-grid">
                 
                 <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
@@ -158,13 +183,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+                </div> <!-- End Skills Tab -->
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">03. <span class="highlight">Operations & Projects</span></h2>
+                <!-- Projects Tab -->
+                <div id="projects-tab" class="tab-pane">
             
             <div class="project-cards">
                 
@@ -382,16 +404,13 @@
 
             </div>
 
-            <div class="projects-cta" style="text-align: center; margin-top: 4rem;" data-aos="fade-up">
+            <div class="projects-cta" style="text-align: center; margin-top: 4rem;">
                 <a href="projects.html" class="btn btn-outline btn-lg">Explore Project Details <i class="fas fa-arrow-right"></i></a>
             </div>
-        </div>
-    </section>
-  
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-right">04. <span class="highlight">Experience Timeline</span></h2>
+                </div> <!-- End Projects Tab -->
+
+                <!-- Experience Tab -->
+                <div id="experience-tab" class="tab-pane">
             
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-up">
@@ -426,6 +445,9 @@
                     </div>
                 </div>
             </div>
+                </div> <!-- End Experience Tab -->
+                
+            </div> <!-- End tab-content-container -->
         </div>
     </section>
 
@@ -436,6 +458,7 @@
             
             <div class="cert-grid">
                 <div class="cert-card" data-aos="flip-up">
+                    <div class="cert-image"><img src="./cert-photos/isc(cc).png" alt="ISC2 CC Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-shield-check"></i></div>
                     <h3>ISC2 CC</h3>
                     <p>Certified in Cybersecurity</p>
@@ -443,6 +466,7 @@
                 </div>
                 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="cert-image"><img src="./cert-photos/thical%20hackercisco.png" alt="Cisco Ethical Hacker Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
                     <h3>Cisco Ethical Hacker</h3>
                     <p>Cisco Networking Academy</p>
@@ -450,6 +474,7 @@
                 </div>
                 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="cert-image"><img src="./cert-photos/python.png" alt="Cisco Python Essentials 1 Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fab fa-python"></i></div>
                     <h3>Cisco Python Essentials 1</h3>
                     <p>Python Institute</p>
@@ -457,6 +482,7 @@
                 </div>
                 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="cert-image"><img src="./cert-photos/intotosecurity.png" alt="Intro to Cybersecurity Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Intro to Cybersecurity</h3>
                     <p>Cisco Networking Academy</p>
@@ -464,6 +490,7 @@
                 </div>
 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="cert-image"><img src="./cert-photos/datascintestin%20python.png" alt="Data Scientist in Python Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Data Scientist in Python</h3>
                     <p>DataCamp · 26 hours</p>
@@ -471,6 +498,7 @@
                 </div>
 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="cert-image"><img src="./cert-photos/dataanlystinsql.png" alt="Data Analyst in SQL Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-database"></i></div>
                     <h3>Data Analyst in SQL</h3>
                     <p>DataCamp · 39 hours</p>
@@ -478,6 +506,7 @@
                 </div>
 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="600">
+                    <div class="cert-image"><img src="./cert-photos/cybersecurity101.png" alt="Cyber Security 101 Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-desktop"></i></div>
                     <h3>Cyber Security 101</h3>
                     <p>TryHackMe Learning Path</p>
@@ -485,6 +514,15 @@
                 </div>
 
                 <div class="cert-card" data-aos="flip-up" data-aos-delay="700">
+                    <div class="cert-image"><img src="./cert-photos/linux.png" alt="Linux Unhatched Certificate" class="cert-img"></div>
+                    <div class="cert-icon"><i class="fab fa-linux"></i></div>
+                    <h3>Linux Unhatched</h3>
+                    <p>Cisco Networking Academy</p>
+                    <span class="cert-date">Apr 2026</span>
+                </div>
+
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="800">
+                    <div class="cert-image"><img src="./cert-photos/presecurity.png" alt="Pre Security Certificate" class="cert-img"></div>
                     <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Pre Security</h3>
                     <p>TryHackMe Learning Path</p>
@@ -520,6 +558,13 @@
             <p class="footer-terminal">status: 200 OK | connection: secure</p>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
