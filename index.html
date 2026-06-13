@@ -21,17 +21,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="no-scroll">
-    <!-- Splash Screen (Boot Sequence) -->
-    <div id="splash-screen" class="splash-screen">
-        <div class="terminal-card splash-terminal">
-            <div class="terminal-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-            </div>
-            <div class="terminal-body" id="boot-sequence">
-                <!-- Content injected via JS -->
-            </div>
+    <!-- Simple Splash Screen -->
+    <div id="simple-splash" class="simple-splash">
+        <div class="splash-content">
+            <span class="prompt" style="color: #00f0ff;">&gt;_</span> <span id="splash-typed"></span>
         </div>
     </div>
 
@@ -69,7 +62,7 @@
                 Bridging the gap between building robust applications and securing them. Top 5% on TryHackMe, Ranked 32nd in Turkey.
             </p>
             <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#portfolio-database" class="btn btn-primary">View Projects</a>
                 <a href="https://github.com/codx7-debug" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
@@ -84,20 +77,25 @@
             <h2 class="section-title" data-aos="fade-right">01. <span class="highlight">whoami</span></h2>
             <div class="about-content" data-aos="fade-up">
                 <div class="about-text">
-                    <p>Hello! I'm Saleh, a passionate <strong>Software Engineering Student</strong> based in Ajman, UAE, graduating in May 2026. My interest in cybersecurity started when I realized that building software wasn't enough; defending it is where the real challenge lies.</p>
+                    <p>Hello! I'm Saleh, a passionate <strong>Software Engineering Student</strong> based in Ajman, UAE / Ankara, Turkey, graduating in May 2026. My interest in cybersecurity started when I realized that building software wasn't enough; defending it is where the real challenge lies.</p>
                     <p>I specialize in network security, SIEM monitoring, Active Directory, and building secure full-stack applications. As a <strong>Cisco Certified Ethical Hacker</strong> and holding the <strong>ISC2 Certified in Cybersecurity (CC)</strong>, I am actively building my arsenal of defensive and offensive skills.</p>
                     <p>My unique background in software engineering allows me to automate triage workflows, write custom log parsing scripts, and integrate APIs directly into security operations—skills that fast-track threat remediation and security tooling.</p>
                     <div class="about-contact">
-                        <span><i class="fas fa-envelope"></i> wvkl0243@gmail.com</span>
-                        <span><i class="fas fa-map-marker-alt"></i> Ajman, UAE</span>
-                        <span><i class="fas fa-graduation-cap"></i> Ostim Teknik University (GPA 3.30 | Honor Degree)</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Ajman, UAE / Ankara, Turkey</span>
+                        <span><i class="fas fa-graduation-cap"></i> Ostim Teknik University (GPA 3.36 | Honor Degree)</span>
                     </div>
                 </div>
                 <div class="about-image-wrapper">
                     <div class="about-image">
+                        <!-- Profile Picture Section -->
+                        <!-- REPLACE the src attribute with your picture, e.g., src="./my-pic.jpg" -->
+                        <div class="profile-pic-container" data-aos="zoom-in">
+                            <img src="./personal_photo/personal_photo.jpeg" alt="Saleh Al-Shami" id="profile-picture" class="profile-pic">
+                        </div>
+
                         <div class="image-overlay"></div>
-                        <!-- Placeholder for a real photo, using a cool terminal graphic for now -->
-                        <div class="terminal-card">
+                        <!-- Terminal graphic as secondary visual -->
+                        <div class="terminal-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="terminal-header">
                                 <span class="dot red"></span>
                                 <span class="dot yellow"></span>
@@ -107,7 +105,7 @@
                                 <p><span class="prompt">codx7@system:~$</span> cat stats.txt</p>
                                 <p>OS: Kali Linux / Windows</p>
                                 <p>Role: SOC Analyst / Full-Stack</p>
-                                <p>THM Rank: Top 5% Global (#32 in Turkey)</p>
+                                <p>THM Rank: Top 4% Global (#32 in Turkey)</p>
                                 <p>Rooms Completed: 101</p>
                                 <p><span class="prompt">codx7@system:~$</span> <span class="cursor blink"></span></p>
                             </div>
@@ -540,12 +538,31 @@
                 Whether you're looking for an eager SOC Analyst L1, need help with a security project, or just want to talk about the latest APT threats, my inbox is open.
             </p>
             
-            <div class="contact-links" data-aos="fade-up" data-aos-delay="200">
-                <a href="mailto:wvkl0243@gmail.com" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> wvkl0243@gmail.com</a>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/saleh-fa-als" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/codx7-debug" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="tel:+971566966092" title="Phone"><i class="fas fa-phone-alt"></i></a>
+            <div class="contact-grid">
+                <div class="contact-card form-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Message Me</h3>
+                    <form action="https://formspree.io/f/mojzpdpj" method="POST" class="contact-form">
+                        <input type="email" name="email" placeholder="Your email" required class="form-input">
+                        <textarea name="message" placeholder="Your message" required class="form-input" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Ajman, UAE<br>Ankara, Turkey</p>
+                </div>
+                
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="contact-icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Social</h3>
+                    <div class="social-links-grid">
+                        <a href="https://linkedin.com/in/saleh-fa-als" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/codx7-debug" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://tryhackme.com/p/codx7" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

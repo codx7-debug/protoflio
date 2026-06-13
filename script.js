@@ -1,63 +1,22 @@
 // Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', () => {
-    // Boot Sequence (Splash Screen) Logic
-    const splashScreen = document.getElementById('splash-screen');
-    const bootSequence = document.getElementById('boot-sequence');
-    
-    if (splashScreen && bootSequence) {
-        const asciiArt = `
-   _____         __    __    __ 
-  / ___/____ _  / /__ / /_  / / 
-  \\__ \\/ __ \`/ / / _ \\/ __ \\/ /  
- ___/ / /_/ / / /  __/ / / /_/   
-/____/\\__,_/_/_/\\___/_/ /_(_)   
-   SOC ANALYST // ENGINEER
-`;
-        
-        let delayCounter = 0;
-        const cursor = document.createElement('span');
-        cursor.className = 'cursor blink';
-        
-        const addLine = (text, className, delay, isAscii = false) => {
-            delayCounter += delay;
-            setTimeout(() => {
-                if (cursor.parentNode) cursor.remove();
-                const el = document.createElement(isAscii ? 'pre' : 'span');
-                el.className = isAscii ? `ascii-art` : `splash-line ${className}`;
-                el.innerHTML = text; 
-                bootSequence.appendChild(el);
-                bootSequence.appendChild(cursor);
-                bootSequence.scrollTop = bootSequence.scrollHeight;
-            }, delayCounter);
-        };
-
-        addLine(asciiArt, '', 200, true);
-        addLine('root@system:~# ./init_portfolio.sh', 'info', 800);
-        addLine('[*] Establishing secure connection to TryHackMe servers...', 'info', 500);
-        addLine('[+] Handshake successful.', 'success', 400);
-        addLine('[*] Bypassing mainframe security...', 'warning', 600);
-        
-        for(let i = 0; i < 6; i++) {
-            const hex = Math.floor(Math.random()*16777215).toString(16).toUpperCase().padStart(6, '0');
-            addLine(`[OK] Loaded security module 0x${hex}`, 'success', 80);
-        }
-
-        addLine('[*] Decrypting payload...', 'info', 400);
-        
-        addLine('Decrypting: <span class="progress-bar">[##........] 20%</span>', 'warning', 200);
-        addLine('Decrypting: <span class="progress-bar">[#####.....] 50%</span>', 'warning', 200);
-        addLine('Decrypting: <span class="progress-bar">[########..] 80%</span>', 'warning', 200);
-        addLine('Decrypting: <span class="progress-bar">[##########] 100%</span>', 'success', 200);
-
-        addLine('[!] USER AUTHENTICATION REQUIRED', 'warning', 500);
-        addLine('> Verifying Identity...', 'info', 600);
-        addLine('[+] IDENTITY CONFIRMED: Saleh Al-Shami', 'success', 400);
-        addLine('>>> ACCESS GRANTED <<<', 'glitch-text', 600);
-
-        setTimeout(() => {
-            splashScreen.classList.add('hidden');
-            document.body.classList.remove('no-scroll');
-        }, delayCounter + 1500);
+    // Simple Splash Screen Logic
+    const splashScreen = document.getElementById('simple-splash');
+    if (splashScreen) {
+        new Typed('#splash-typed', {
+            strings: ['Initializing system...', 'Connection established.'],
+            typeSpeed: 40,
+            backSpeed: 20,
+            backDelay: 600,
+            showCursor: true,
+            cursorChar: '_',
+            onComplete: function() {
+                setTimeout(() => {
+                    splashScreen.classList.add('hidden');
+                    document.body.classList.remove('no-scroll');
+                }, 500);
+            }
+        });
     }
 
     AOS.init({
