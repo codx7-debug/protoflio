@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             backDelay: 600,
             showCursor: true,
             cursorChar: '_',
-            onComplete: function() {
+            onComplete: function () {
                 setTimeout(() => {
                     splashScreen.classList.add('hidden');
                     document.body.classList.remove('no-scroll');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         strings: [
             'SOC Analyst L1',
             'Software Engineering Graduate'
-            
+
         ],
         typeSpeed: 50,
         backSpeed: 30,
@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             tabBtns.forEach(b => b.classList.remove('active'));
             tabPanes.forEach(p => p.classList.remove('active'));
-            
+
             btn.classList.add('active');
             const targetId = btn.getAttribute('data-target');
             document.getElementById(targetId).classList.add('active');
-            
+
             // Re-trigger AOS for the newly visible items if necessary
             // Or just let CSS animation handle it
         });
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             const targetTabId = link.getAttribute('data-tab-link');
             const targetBtn = document.querySelector(`.tab-btn[data-target="${targetTabId}"]`);
-            if(targetBtn) {
+            if (targetBtn) {
                 targetBtn.click();
             }
         });
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (lightbox && lightboxImg) {
         certImages.forEach(img => {
-            img.addEventListener('click', function() {
+            img.addEventListener('click', function () {
                 lightbox.classList.add('show');
                 lightboxImg.src = this.src;
                 lightboxCaption.innerHTML = this.alt;
