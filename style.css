@@ -565,6 +565,7 @@ ul {
 .badge.ctf { background: rgba(57, 255, 20, 0.1); color: var(--secondary); border: 1px solid var(--secondary); }
 .badge.appsec { background: rgba(255, 165, 0, 0.1); color: #ffa500; border: 1px solid #ffa500; }
 .badge.fullstack { background: rgba(30, 144, 255, 0.1); color: #1e90ff; border: 1px solid #1e90ff; }
+.badge.network { background: rgba(0, 201, 167, 0.1); color: #00c9a7; border: 1px solid #00c9a7; }
 
 .project-title {
     font-size: 1.4rem;
